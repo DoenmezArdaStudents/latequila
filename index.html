@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tequila | Authentisches Mexikanisches Restaurant</title>
+    <meta name="description" content="La Tequila – Erleben Sie die authentischen Aromen Mexikos. Frische Tacos, klassische Margaritas und mexikanische Küche mit Leidenschaft.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-pepper-hot logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-name">La Tequila</span>
+                    <span class="logo-tagline">Restaurant Mexicano</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Speisekarte</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="reservations.html">Reservierung</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+
+            <a href="reservations.html" class="nav-cta">Tisch reservieren</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img
+                src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1920&q=85"
+                alt="Authentische mexikanische Tacos"
+                loading="eager"
+            >
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="hero-tagline">Auténtico · Mexicano · Pasión</p>
+            <h1 class="hero-title">La Tequila</h1>
+            <p class="hero-subtitle">
+                Erleben Sie die authentischen Aromen Mexikos.<br>
+                Frisch zubereitet – mit Leidenschaft serviert.
+            </p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn-primary">
+                    <i class="fas fa-utensils"></i> Speisekarte entdecken
+                </a>
+                <a href="reservations.html" class="btn-secondary">
+                    <i class="fas fa-calendar-check"></i> Tisch reservieren
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VALUES STRIP ===== -->
+    <section class="values-strip">
+        <div class="container">
+            <div class="values-grid">
+                <div class="value-item reveal delay-1">
+                    <i class="fas fa-pepper-hot"></i>
+                    <h3>Authentische Rezepte</h3>
+                    <p>Traditionelle mexikanische Gerichte nach Originalrezepten, die Generationen überdauert haben</p>
+                </div>
+                <div class="value-item reveal delay-2">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Frische Zutaten</h3>
+                    <p>Täglich frisch zubereitet mit sorgfältig ausgewählten Zutaten aus der Region</p>
+                </div>
+                <div class="value-item reveal delay-3">
+                    <i class="fas fa-cocktail"></i>
+                    <h3>Premium Cocktails</h3>
+                    <p>Handgemachte Margaritas und klassische mexikanische Cocktails mit erstklassigen Tequilas</p>
+                </div>
+                <div class="value-item reveal delay-4">
+                    <i class="fas fa-heart"></i>
+                    <h3>Mit Leidenschaft</h3>
+                    <p>Jedes Gericht wird mit Hingabe und echter Leidenschaft für die mexikanische Küche zubereitet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images reveal-left">
+                    <div class="about-img-main">
+                        <img
+                            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+                            alt="Restaurant Ambiente"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="about-img-secondary">
+                        <img
+                            src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=400&q=80"
+                            alt="Frische Guacamole"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-year">Seit</span>
+                        <span class="badge-number">[JAHR]</span>
+                        <span class="badge-text">Jahren</span>
+                    </div>
+                </div>
+
+                <div class="about-content reveal-right">
+                    <p class="section-label">Unsere Geschichte</p>
+                    <h2 class="section-title">
+                        Herzlich Willkommen<br>bei <em>La Tequila</em>
+                    </h2>
+                    <div class="about-text">
+                        <p>
+                            [HIER IHRE RESTAURANTGESCHICHTE EINFÜGEN – Erzählen Sie, wie La Tequila entstanden ist,
+                            was Sie antreibt und was Ihr Restaurant einzigartig macht. Sprechen Sie die Gäste persönlich an.]
+                        </p>
+                        <p>
+                            [ZWEITER ABSATZ – Beschreiben Sie Ihre Küche, Ihre Philosophie und die Atmosphäre, die
+                            Gäste bei Ihnen erwarten dürfen. Was macht Ihren Besuch zu einem besonderen Erlebnis?]
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">[X]+</span>
+                            <span class="stat-label">Gerichte</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">[X]+</span>
+                            <span class="stat-label">Zufriedene Gäste</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">[X]+</span>
+                            <span class="stat-label">Tequila-Sorten</span>
+                        </div>
+                    </div>
+
+                    <a href="reservations.html" class="btn-primary">
+                        <i class="fas fa-calendar-check"></i> Jetzt Tisch reservieren
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED DISHES ===== -->
+    <section class="featured" id="dishes">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Chef's Empfehlungen</p>
+                <h2 class="section-title">Unsere Spezialitäten</h2>
+                <div class="title-divider">
+                    <span></span>
+                    <i class="fas fa-pepper-hot"></i>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="dishes-grid">
+                <!-- Dish 1 -->
+                <div class="dish-card reveal delay-1">
+                    <div class="dish-img-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80"
+                            alt="Tacos"
+                            loading="lazy"
+                        >
+                        <div class="dish-badge">Chef's Choice</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>[GERICHTNAME]</h3>
+                            <span class="dish-price">[€ XX,XX]</span>
+                        </div>
+                        <p>[Kurze appetitliche Beschreibung des Gerichts – Zutaten, Besonderheiten und Geschmack.]</p>
+                        <div class="dish-tags">
+                            <span class="tag"><i class="fas fa-pepper-hot"></i> Scharf</span>
+                            <span class="tag"><i class="fas fa-star"></i> Beliebt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 2 -->
+                <div class="dish-card reveal delay-2">
+                    <div class="dish-img-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=600&q=80"
+                            alt="Guacamole"
+                            loading="lazy"
+                        >
+                        <div class="dish-badge new">Neu</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>[GERICHTNAME]</h3>
+                            <span class="dish-price">[€ XX,XX]</span>
+                        </div>
+                        <p>[Kurze appetitliche Beschreibung des Gerichts – Zutaten, Besonderheiten und Geschmack.]</p>
+                        <div class="dish-tags">
+                            <span class="tag"><i class="fas fa-seedling"></i> Vegan</span>
+                            <span class="tag"><i class="fas fa-star"></i> Beliebt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 3 -->
+                <div class="dish-card reveal delay-3">
+                    <div class="dish-img-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=600&q=80"
+                            alt="Nachos"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>[GERICHTNAME]</h3>
+                            <span class="dish-price">[€ XX,XX]</span>
+                        </div>
+                        <p>[Kurze appetitliche Beschreibung des Gerichts – Zutaten, Besonderheiten und Geschmack.]</p>
+                        <div class="dish-tags">
+                            <span class="tag"><i class="fas fa-users"></i> Zum Teilen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 4 -->
+                <div class="dish-card reveal delay-4">
+                    <div class="dish-img-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80"
+                            alt="Margarita"
+                            loading="lazy"
+                        >
+                        <div class="dish-badge signature">Signature</div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>[GERICHTNAME]</h3>
+                            <span class="dish-price">[€ XX,XX]</span>
+                        </div>
+                        <p>[Kurze Beschreibung des Cocktails – Zutaten, Besonderheiten und Geschmack.]</p>
+                        <div class="dish-tags">
+                            <span class="tag"><i class="fas fa-cocktail"></i> Cocktail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta reveal">
+                <a href="menu.html" class="btn-primary">
+                    <i class="fas fa-book-open"></i> Gesamte Speisekarte ansehen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MENU BANNER ===== -->
+    <section class="menu-banner">
+        <div class="menu-banner-bg">
+            <img
+                src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1920&q=80"
+                alt="Mexican Food"
+                loading="lazy"
+            >
+        </div>
+        <div class="menu-banner-overlay"></div>
+        <div class="container">
+            <div class="menu-banner-content reveal">
+                <p class="section-label">La Tequila</p>
+                <h2>Sabores Auténticos de México</h2>
+                <p class="menu-banner-text">
+                    Von handgemachten Tacos bis zu verführerischen Enchiladas –
+                    entdecken Sie die gesamte Vielfalt der mexikanischen Küche in unserer Speisekarte.
+                </p>
+                <a href="menu.html" class="btn-gold">
+                    <i class="fas fa-book-open"></i> Speisekarte öffnen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Eindrücke</p>
+                <h2 class="section-title">Erleben Sie La Tequila</h2>
+                <div class="title-divider">
+                    <span></span>
+                    <i class="fas fa-camera"></i>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal-left">
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=900&q=80" alt="Tacos" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal delay-1">
+                    <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=500&q=80" alt="Guacamole" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal delay-2">
+                    <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=500&q=80" alt="Nachos" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal delay-3">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500&q=80" alt="Cocktail" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item tall reveal-right">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=80" alt="Restaurant" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal delay-4">
+                    <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=500&q=80" alt="Mexikanisches Essen" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Was unsere Gäste sagen</p>
+                <h2 class="section-title">Bewertungen</h2>
+                <div class="title-divider">
+                    <span></span>
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        „Das beste mexikanische Restaurant, das ich je besucht habe! Die Tacos sind absolut
+                        authentisch, die Margaritas erstklassig und das Ambiente einfach wunderschön.
+                        Wir kommen garantiert wieder!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div>
+                            <strong>Sarah M.</strong>
+                            <span>Google Bewertung · ⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        „Fantastisches Essen, freundlicher Service und eine tolle Atmosphäre. Die Guacamole
+                        wird am Tisch frisch zubereitet – einfach unglaublich! Sehr empfehlenswert für
+                        alle, die echte mexikanische Küche lieben."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div>
+                            <strong>Michael K.</strong>
+                            <span>TripAdvisor · ⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        „Wir feiern hier regelmäßig unsere Geburtstage und Feste. Das Team ist super
+                        freundlich, das Essen immer frisch und köstlich. La Tequila ist und bleibt
+                        unser absolutes Lieblingsrestaurant!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <strong>Anna L.</strong>
+                            <span>Google Bewertung · ⭐⭐⭐⭐½</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-controls">
+                <button class="prev-btn" id="prevBtn" aria-label="Vorherige Bewertung">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn" id="nextBtn" aria-label="Nächste Bewertung">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESERVATION CTA ===== -->
+    <section class="reservation-cta">
+        <div class="container">
+            <div class="res-cta-content reveal">
+                <p class="section-label">Kommen Sie zu uns</p>
+                <h2>Reservieren Sie Ihren Tisch</h2>
+                <p>Genießen Sie ein unvergessliches mexikanisches Erlebnis in gemütlicher Atmosphäre.<br>Wir freuen uns auf Ihren Besuch!</p>
+                <a href="reservations.html" class="btn-gold">
+                    <i class="fas fa-calendar-check"></i> Jetzt reservieren
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER / CONTACT ===== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-pepper-hot logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-name">La Tequila</span>
+                            <span class="logo-tagline">Restaurant Mexicano</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Authentische mexikanische Küche mit Herz und Leidenschaft.
+                        Wir bringen Mexikos Aromen direkt zu Ihnen – frisch, farbenfroh und unvergesslich.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Speisekarte</a></li>
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="reservations.html">Reservierung</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="footer-section">
+                    <h4>Öffnungszeiten</h4>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span>Montag</span>
+                            <span>[GESCHLOSSEN]</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Di – Do</span>
+                            <span>[XX:XX – XX:XX]</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Freitag</span>
+                            <span>[XX:XX – XX:XX]</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Samstag</span>
+                            <span>[XX:XX – XX:XX]</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Sonntag</span>
+                            <span>[XX:XX – XX:XX]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-section">
+                    <h4>Kontakt &amp; Anfahrt</h4>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                [STRASSE NR.]<br>
+                                [PLZ ORT]
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:[TELEFONNUMMER]">[TELEFONNUMMER]</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:[E-MAIL]">[E-MAIL ADRESSE]</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/[NUMMER]">WhatsApp schreiben</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Tequila Restaurant. Alle Rechte vorbehalten.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Datenschutzerklärung</a>
+                    <a href="#">Impressum</a>
+                    <a href="#">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvorschau">
+        <div class="lightbox-overlay"></div>
+        <button class="lightbox-close" aria-label="Schließen"><i class="fas fa-times"></i></button>
+        <img src="" alt="Galerie Bild" class="lightbox-img">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speisekarte | La Tequila Restaurant</title>
+    <meta name="description" content="Entdecken Sie unsere authentische mexikanische Speisekarte – Tacos, Burritos, Enchiladas, frische Guacamole und handgemachte Margaritas.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Dancing+Script:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-pepper-hot logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-name">La Tequila</span>
+                    <span class="logo-tagline">Restaurant Mexicano</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Speisekarte</a></li>
+                <li><a href="index.html#about">Über uns</a></li>
+                <li><a href="index.html#gallery">Galerie</a></li>
+                <li><a href="reservations.html">Reservierung</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+            </ul>
+
+            <a href="reservations.html" class="nav-cta">Tisch reservieren</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img
+                src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1920&q=80"
+                alt="Mexikanische Speisekarte"
+                loading="eager"
+            >
+        </div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <p class="page-hero-label">La Tequila</p>
+            <h1>Nuestra Carta · Speisekarte</h1>
+        </div>
+    </section>
+
+    <!-- ===== MENU SECTION ===== -->
+    <section class="menu-section">
+        <div class="container">
+
+            <!-- Tabs -->
+            <div class="menu-tabs reveal">
+                <button class="menu-tab active" data-target="vorspeisen">
+                    <i class="fas fa-drumstick-bite"></i> Vorspeisen
+                </button>
+                <button class="menu-tab" data-target="tacos">
+                    🌮 Tacos
+                </button>
+                <button class="menu-tab" data-target="burritos">
+                    🌯 Burritos &amp; Enchiladas
+                </button>
+                <button class="menu-tab" data-target="hauptgerichte">
+                    <i class="fas fa-utensils"></i> Hauptgerichte
+                </button>
+                <button class="menu-tab" data-target="desserts">
+                    <i class="fas fa-ice-cream"></i> Desserts
+                </button>
+                <button class="menu-tab" data-target="getraenke">
+                    <i class="fas fa-cocktail"></i> Getränke &amp; Cocktails
+                </button>
+            </div>
+
+            <!-- ---- VORSPEISEN ---- -->
+            <div class="menu-category active reveal" id="vorspeisen">
+                <h2 class="menu-category-title">Vorspeisen · Entradas</h2>
+                <p class="menu-category-desc">Starten Sie Ihren Abend mit unseren frisch zubereiteten mexikanischen Vorspeisen.</p>
+
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=200&q=80"
+                            alt="Guacamole" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[GERICHTNAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Gerichts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-veg">Vegan</span>
+                                <span class="menu-badge badge-fav">Bestseller</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=200&q=80"
+                            alt="Nachos" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[GERICHTNAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Gerichts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-fav">Beliebt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Vorspeise" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[GERICHTNAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Gerichts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-hot">Scharf</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=200&q=80"
+                            alt="Vorspeise" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[GERICHTNAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Gerichts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-new">Neu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---- TACOS ---- -->
+            <div class="menu-category" id="tacos">
+                <h2 class="menu-category-title">Tacos</h2>
+                <p class="menu-category-desc">Handgemachte Maistortillas, täglich frisch – belegt mit den besten Zutaten.</p>
+
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Taco" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[TACO NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Saucen, Beilagen]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-fav">Bestseller</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Taco" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[TACO NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Saucen, Beilagen]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-hot">Scharf</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Taco Vegetarisch" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[TACO NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Saucen, Beilagen]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-veg">Vegetarisch</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Taco" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[TACO NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Saucen, Beilagen]</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Taco" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[TACO NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Saucen, Beilagen]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-new">Neu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Taco" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[TACO NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Saucen, Beilagen]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---- BURRITOS & ENCHILADAS ---- -->
+            <div class="menu-category" id="burritos">
+                <h2 class="menu-category-title">Burritos &amp; Enchiladas</h2>
+                <p class="menu-category-desc">Großzügig gefüllt, satt und zufrieden – unsere Klassiker für den großen Hunger.</p>
+
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=200&q=80"
+                            alt="Burrito" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[BURRITO NAME]</h4>
+                                <span class="menu-item-price">[€ XX,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Sauce, Beilagen]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-fav">Bestseller</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=200&q=80"
+                            alt="Burrito" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[BURRITO NAME]</h4>
+                                <span class="menu-item-price">[€ XX,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Sauce, Beilagen]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-veg">Vegetarisch</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=200&q=80"
+                            alt="Enchiladas" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[ENCHILADA NAME]</h4>
+                                <span class="menu-item-price">[€ XX,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Sauce, Beilagen]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-hot">Scharf</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=200&q=80"
+                            alt="Enchiladas" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[ENCHILADA NAME]</h4>
+                                <span class="menu-item-price">[€ XX,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Füllung, Sauce, Beilagen]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---- HAUPTGERICHTE ---- -->
+            <div class="menu-category" id="hauptgerichte">
+                <h2 class="menu-category-title">Hauptgerichte · Platos Principales</h2>
+                <p class="menu-category-desc">Herzhafte mexikanische Gerichte für Genießer – direkt aus unserer Küche auf Ihren Tisch.</p>
+
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Hauptgericht" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[GERICHTNAME]</h4>
+                                <span class="menu-item-price">[€ XX,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Gerichts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-fav">Chef's Favorit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=200&q=80"
+                            alt="Hauptgericht" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[GERICHTNAME]</h4>
+                                <span class="menu-item-price">[€ XX,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Gerichts]</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=200&q=80"
+                            alt="Hauptgericht" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[GERICHTNAME]</h4>
+                                <span class="menu-item-price">[€ XX,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Gerichts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-veg">Vegetarisch</span>
+                                <span class="menu-badge badge-new">Neu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=200&q=80"
+                            alt="Hauptgericht" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[GERICHTNAME]</h4>
+                                <span class="menu-item-price">[€ XX,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Gerichts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-hot">Scharf</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---- DESSERTS ---- -->
+            <div class="menu-category" id="desserts">
+                <h2 class="menu-category-title">Desserts · Postres</h2>
+                <p class="menu-category-desc">Der süße Abschluss Ihres mexikanischen Genusserlebnisses.</p>
+
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=200&q=80"
+                            alt="Dessert" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[DESSERT NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Desserts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-fav">Hausgemacht</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=200&q=80"
+                            alt="Dessert" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[DESSERT NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Desserts]</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-img"
+                            src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=200&q=80"
+                            alt="Dessert" loading="lazy">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4>[DESSERT NAME]</h4>
+                                <span class="menu-item-price">[€ X,XX]</span>
+                            </div>
+                            <p class="menu-item-desc">[Beschreibung – Zutaten und Besonderheit des Desserts]</p>
+                            <div class="menu-item-badges">
+                                <span class="menu-badge badge-veg">Vegetarisch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---- GETRÄNKE & COCKTAILS ---- -->
+            <div class="menu-category" id="getraenke">
+                <h2 class="menu-category-title">Getränke &amp; Cocktails · Bebidas</h2>
+                <p class="menu-category-desc">Von klassischen Margaritas bis zu feinen Tequila-Sorten – für jeden Geschmack das Richtige.</p>
+
+                <h3 style="font-family:var(--font-heading);color:var(--primary);margin-bottom:1.25rem;font-size:1.2rem;">
+                    <i class="fas fa-cocktail"></i> &nbsp;Signature Cocktails
+                </h3>
+                <div class="drinks-grid" style="margin-bottom:3rem;">
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[COCKTAIL NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Beschreibung – Zutaten und Besonderheit des Cocktails]</p>
+                        <span class="menu-badge badge-fav">Signature</span>
+                    </div>
+
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[COCKTAIL NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Beschreibung – Zutaten und Besonderheit des Cocktails]</p>
+                    </div>
+
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[COCKTAIL NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Beschreibung – Zutaten und Besonderheit des Cocktails]</p>
+                        <span class="menu-badge badge-fav">Bestseller</span>
+                    </div>
+
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[COCKTAIL NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Beschreibung – Zutaten und Besonderheit des Cocktails]</p>
+                    </div>
+                </div>
+
+                <h3 style="font-family:var(--font-heading);color:var(--primary);margin-bottom:1.25rem;font-size:1.2rem;">
+                    <i class="fas fa-wine-glass-alt"></i> &nbsp;Tequila-Auswahl
+                </h3>
+                <div class="drinks-grid" style="margin-bottom:3rem;">
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[TEQUILA NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Reife, Herkunft, Geschmacksnoten]</p>
+                    </div>
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[TEQUILA NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Reife, Herkunft, Geschmacksnoten]</p>
+                    </div>
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[TEQUILA NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Reife, Herkunft, Geschmacksnoten]</p>
+                    </div>
+                </div>
+
+                <h3 style="font-family:var(--font-heading);color:var(--primary);margin-bottom:1.25rem;font-size:1.2rem;">
+                    <i class="fas fa-mug-hot"></i> &nbsp;Alkoholfreie Getränke
+                </h3>
+                <div class="drinks-grid">
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[GETRÄNK NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Beschreibung]</p>
+                    </div>
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[GETRÄNK NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Beschreibung]</p>
+                    </div>
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[GETRÄNK NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Beschreibung]</p>
+                    </div>
+                    <div class="drink-item">
+                        <div style="display:flex;justify-content:space-between;gap:1rem;margin-bottom:0.35rem;">
+                            <span class="drink-name">[GETRÄNK NAME]</span>
+                            <span class="drink-price">[€ X,XX]</span>
+                        </div>
+                        <p class="drink-desc">[Beschreibung]</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-pepper-hot logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-name">La Tequila</span>
+                            <span class="logo-tagline">Restaurant Mexicano</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Authentische mexikanische Küche mit Herz und Leidenschaft.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="Google"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Speisekarte</a></li>
+                        <li><a href="index.html#about">Über uns</a></li>
+                        <li><a href="reservations.html">Reservierung</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Öffnungszeiten</h4>
+                    <div class="hours-list">
+                        <div class="hours-item"><span>Montag</span><span>[GESCHLOSSEN]</span></div>
+                        <div class="hours-item"><span>Di – Do</span><span>[XX:XX – XX:XX]</span></div>
+                        <div class="hours-item"><span>Fr – Sa</span><span>[XX:XX – XX:XX]</span></div>
+                        <div class="hours-item"><span>Sonntag</span><span>[XX:XX – XX:XX]</span></div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>[ADRESSE]<br>[PLZ ORT]</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:[TELEFON]">[TELEFONNUMMER]</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:[EMAIL]">[E-MAIL]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Tequila Restaurant. Alle Rechte vorbehalten.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Datenschutz</a>
+                    <a href="#">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservierung | La Tequila Restaurant</title>
+    <meta name="description" content="Reservieren Sie Ihren Tisch bei La Tequila – Ihrem authentischen mexikanischen Restaurant. Einfach online buchen oder anrufen.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Dancing+Script:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-pepper-hot logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-name">La Tequila</span>
+                    <span class="logo-tagline">Restaurant Mexicano</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Speisekarte</a></li>
+                <li><a href="index.html#about">Über uns</a></li>
+                <li><a href="index.html#gallery">Galerie</a></li>
+                <li><a href="reservations.html" class="active">Reservierung</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+            </ul>
+
+            <a href="reservations.html" class="nav-cta">Tisch reservieren</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80"
+                alt="Restaurant Ambiente"
+                loading="eager"
+            >
+        </div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <p class="page-hero-label">Wir freuen uns auf Sie</p>
+            <h1>Tisch reservieren</h1>
+        </div>
+    </section>
+
+    <!-- ===== RESERVATION SECTION ===== -->
+    <section class="reservation-section">
+        <div class="container">
+            <div class="reservation-grid">
+
+                <!-- Form -->
+                <div class="form-card reveal-left">
+                    <h2>Tischreservierung</h2>
+                    <p>Füllen Sie das Formular aus und wir bestätigen Ihre Reservierung schnellstmöglich per E-Mail oder Telefon.</p>
+
+                    <form id="reservationForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstname">Vorname *</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="Max" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Nachname *</label>
+                                <input type="text" id="lastname" name="lastname" placeholder="Mustermann" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" placeholder="max@beispiel.at" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+43 123 456789">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Datum *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Uhrzeit *</label>
+                                <select id="time" name="time" required>
+                                    <option value="" disabled selected>Uhrzeit wählen</option>
+                                    <option value="12:00">12:00 Uhr</option>
+                                    <option value="12:30">12:30 Uhr</option>
+                                    <option value="13:00">13:00 Uhr</option>
+                                    <option value="13:30">13:30 Uhr</option>
+                                    <option value="17:00">17:00 Uhr</option>
+                                    <option value="17:30">17:30 Uhr</option>
+                                    <option value="18:00">18:00 Uhr</option>
+                                    <option value="18:30">18:30 Uhr</option>
+                                    <option value="19:00">19:00 Uhr</option>
+                                    <option value="19:30">19:30 Uhr</option>
+                                    <option value="20:00">20:00 Uhr</option>
+                                    <option value="20:30">20:30 Uhr</option>
+                                    <option value="21:00">21:00 Uhr</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Anzahl der Personen *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected>Personenzahl wählen</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Personen</option>
+                                <option value="3">3 Personen</option>
+                                <option value="4">4 Personen</option>
+                                <option value="5">5 Personen</option>
+                                <option value="6">6 Personen</option>
+                                <option value="7">7 Personen</option>
+                                <option value="8">8 Personen</option>
+                                <option value="9">9 Personen</option>
+                                <option value="10+">10+ Personen (Gruppe)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="occasion">Anlass (optional)</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">Kein besonderer Anlass</option>
+                                <option value="geburtstag">Geburtstag</option>
+                                <option value="jubilaeum">Jubiläum / Jahrestag</option>
+                                <option value="business">Geschäftsessen</option>
+                                <option value="feier">Feier / Party</option>
+                                <option value="romantisch">Romantisches Dinner</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wishes">Besondere Wünsche / Allergien</label>
+                            <textarea id="wishes" name="wishes" placeholder="z.B. Vegetarische Menüs, Allergien, Hochstuhl für Kind, bevorzugter Tisch..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;padding:1rem 2rem;font-size:1rem;">
+                            <i class="fas fa-calendar-check"></i> Reservierung anfragen
+                        </button>
+
+                        <p style="font-size:0.78rem;color:var(--gray);margin-top:1rem;text-align:center;line-height:1.6;">
+                            Mit dem Absenden stimmen Sie unserer <a href="#" style="color:var(--primary);">Datenschutzerklärung</a> zu.<br>
+                            Ihre Reservierungsanfrage wird innerhalb von 24 Stunden bestätigt.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Info Sidebar -->
+                <div class="reveal-right">
+                    <div class="res-info-card">
+                        <h3><i class="fas fa-info-circle"></i> &nbsp;Informationen</h3>
+
+                        <div class="info-block">
+                            <h4><i class="fas fa-clock"></i> &nbsp;Öffnungszeiten</h4>
+                            <div class="info-row">
+                                <span>Montag</span>
+                                <span>[GESCHLOSSEN]</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Dienstag – Donnerstag</span>
+                                <span>[XX:XX – XX:XX]</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Freitag</span>
+                                <span>[XX:XX – XX:XX]</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Samstag</span>
+                                <span>[XX:XX – XX:XX]</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Sonntag</span>
+                                <span>[XX:XX – XX:XX]</span>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <h4><i class="fas fa-phone"></i> &nbsp;Direktkontakt</h4>
+                            <div class="info-row">
+                                <span>Telefon</span>
+                                <span><a href="tel:[TELEFON]" style="color:inherit;">[TELEFONNUMMER]</a></span>
+                            </div>
+                            <div class="info-row">
+                                <span>E-Mail</span>
+                                <span><a href="mailto:[EMAIL]" style="color:inherit;">[E-MAIL]</a></span>
+                            </div>
+                            <div class="info-row">
+                                <span>WhatsApp</span>
+                                <span><a href="https://wa.me/[NUMMER]" style="color:inherit;">Schreiben Sie uns</a></span>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <h4><i class="fas fa-map-marker-alt"></i> &nbsp;Adresse</h4>
+                            <div class="info-row">
+                                <span>Straße</span>
+                                <span>[STRASSE NR.]</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Ort</span>
+                                <span>[PLZ ORT]</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Parken</span>
+                                <span>[PARKINFORMATION]</span>
+                            </div>
+                        </div>
+
+                        <!-- Map placeholder — ersetzen Sie dies durch eine echte Google Maps Einbettung -->
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Google Maps hier einbetten</span>
+                            <small style="opacity:.7;font-size:.75rem;">iframe-Einbettungscode von Google Maps einfügen</small>
+                        </div>
+                    </div>
+
+                    <!-- Hinweis Karte -->
+                    <div style="background:#fff;border-radius:var(--radius-lg);padding:1.75rem;margin-top:1.5rem;box-shadow:var(--shadow);border-left:4px solid var(--gold);">
+                        <h4 style="font-family:var(--font-heading);color:var(--dark);margin-bottom:0.75rem;font-size:1rem;">
+                            <i class="fas fa-users" style="color:var(--gold);margin-right:.4rem;"></i> Gruppen &amp; Events
+                        </h4>
+                        <p style="font-size:0.87rem;color:var(--gray);line-height:1.7;">
+                            Für Gruppen ab 10 Personen, Firmenevents oder private Feiern kontaktieren
+                            Sie uns bitte direkt per Telefon oder E-Mail. Wir erstellen Ihnen gerne
+                            ein individuelles Angebot.
+                        </p>
+                        <a href="mailto:[EMAIL]" class="btn-outline" style="margin-top:1rem;font-size:0.8rem;padding:.6rem 1.2rem;">
+                            <i class="fas fa-envelope"></i> Gruppenanfrage senden
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-pepper-hot logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-name">La Tequila</span>
+                            <span class="logo-tagline">Restaurant Mexicano</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Authentische mexikanische Küche mit Herz und Leidenschaft.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="Google"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Speisekarte</a></li>
+                        <li><a href="index.html#about">Über uns</a></li>
+                        <li><a href="reservations.html">Reservierung</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Öffnungszeiten</h4>
+                    <div class="hours-list">
+                        <div class="hours-item"><span>Montag</span><span>[GESCHLOSSEN]</span></div>
+                        <div class="hours-item"><span>Di – Do</span><span>[XX:XX – XX:XX]</span></div>
+                        <div class="hours-item"><span>Fr – Sa</span><span>[XX:XX – XX:XX]</span></div>
+                        <div class="hours-item"><span>Sonntag</span><span>[XX:XX – XX:XX]</span></div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>[ADRESSE]<br>[PLZ ORT]</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:[TELEFON]">[TELEFONNUMMER]</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:[EMAIL]">[E-MAIL]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Tequila Restaurant. Alle Rechte vorbehalten.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Datenschutz</a>
+                    <a href="#">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
