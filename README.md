@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌮 Cocina De Mexico
+# 🌮 La Tequila
 
 ### Frische mittelamerikanische Küche – jetzt auch mit eigener Terrasse
 
@@ -16,7 +16,7 @@
 
 In Mexiko hat Essen und Trinken einen besonders hohen Stellenwert. Die Vielfalt der Speisen basiert auf der einzigartigen Verschmelzung indigener und spanischer Kultur.
 
-Bei **Cocina De Mexico** erwartet Sie eine authentische Auswahl an traditionellen Gerichten mit:
+Bei **La Tequila** erwartet Sie eine authentische Auswahl an traditionellen Gerichten mit:
 
 * 🌮 Frisch zubereiteten Tortillas
 * 🥩 Hochwertigen Fleischspezialitäten
