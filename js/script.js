@@ -8,6 +8,26 @@ const navbar    = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
 
+/* ---------- INTERNAL LINK NORMALIZATION ---------- */
+const currentPath = window.location.pathname;
+const basePath = currentPath.endsWith('/')
+    ? currentPath
+    : currentPath.endsWith('.html')
+        ? currentPath.substring(0, currentPath.lastIndexOf('/') + 1)
+        : `${currentPath}/`;
+
+document.querySelectorAll('a[href]').forEach(link => {
+    const rawHref = link.getAttribute('href');
+    if (!rawHref) return;
+
+    const isExternal = /^(https?:\/\/|mailto:|tel:|javascript:|#)/i.test(rawHref);
+    if (isExternal || rawHref.startsWith('/')) return;
+
+    const [pathPart, hashPart] = rawHref.split('#');
+    const normalizedPath = `${basePath}${pathPart.replace(/^\.\//, '')}`.replace(/\/{2,}/g, '/');
+    link.setAttribute('href', hashPart ? `${normalizedPath}#${hashPart}` : normalizedPath);
+});
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 60) {
         navbar.classList.add('scrolled');
