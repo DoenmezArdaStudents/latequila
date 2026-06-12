@@ -12,6 +12,17 @@
 
 ---
 
+## 🔗 Seitenlinks
+
+- [Home](./index.html)
+- [Speisekarte](./menu.html)
+- [Reservierung](./reservations.html)
+- [Über uns](./index.html#about)
+- [Galerie](./index.html#gallery)
+- [Kontakt](./index.html#contact)
+
+---
+
 ## 🇲🇽 Über Uns
 
 In Mexiko hat Essen und Trinken einen besonders hohen Stellenwert. Die Vielfalt der Speisen basiert auf der einzigartigen Verschmelzung indigener und spanischer Kultur.
