@@ -63,3 +63,15 @@ Der offene Küchenbereich ermöglicht es unseren Gästen, dem Chefkoch direkt be
 **Authentische mexikanische Küche mit Leidenschaft und frischen Zutaten.**
 
 </div>
+
+---
+
+## 🚀 GitHub Pages Deployment
+
+Diese Website wird automatisch über **GitHub Pages** veröffentlicht.
+
+1. Öffnen Sie in GitHub: **Settings → Pages**
+2. Wählen Sie bei **Source**: **GitHub Actions**
+3. Pushen Sie Änderungen auf den `main`-Branch
+
+Der Workflow `.github/workflows/deploy-pages.yml` deployed die Seite automatisch.
