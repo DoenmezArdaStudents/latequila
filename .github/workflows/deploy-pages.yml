@@ -33,7 +33,7 @@ jobs:
           shopt -s nullglob
           html_files=(./*.html)
           if [ ${#html_files[@]} -eq 0 ]; then
-            echo "No HTML files found in repository root."
+            echo "No HTML files found in repository root. Add at least one .html file to root or update this workflow path."
             exit 1
           fi
           cp "${html_files[@]}" _site/
