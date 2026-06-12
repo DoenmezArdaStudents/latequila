@@ -30,9 +30,16 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir -p _site
-          cp ./*.html _site/
-          if [ -d css ]; then cp -r css _site/; fi
-          if [ -d js ]; then cp -r js _site/; fi
+          shopt -s nullglob
+          html_files=(./*.html)
+          if [ ${#html_files[@]} -eq 0 ]; then
+            echo "No HTML files found in repository root."
+            exit 1
+          fi
+          cp "${html_files[@]}" _site/
+          for dir in css js assets img images fonts media; do
+            if [ -d "$dir" ]; then cp -r "$dir" _site/; fi
+          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
