@@ -63,3 +63,9 @@ Der offene Küchenbereich ermöglicht es unseren Gästen, dem Chefkoch direkt be
 **Authentische mexikanische Küche mit Leidenschaft und frischen Zutaten.**
 
 </div>
+
+---
+
+## 🌐 GitHub Pages
+
+https://doenmezardastudents.github.io/latequila/
